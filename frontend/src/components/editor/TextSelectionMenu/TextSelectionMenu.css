@@ -1,0 +1,241 @@
+.text-selection-menu {
+  position: absolute;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 2000;
+  min-width: 280px;
+  max-width: 320px;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  margin-top: 8px;
+  pointer-events: auto;
+  transform: none;
+}
+
+.selection-menu-header {
+  padding: 12px;
+}
+
+.add-to-chat-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+.add-to-chat-option:hover {
+  background-color: #e9ecef;
+  border-color: #6c5ce7;
+}
+
+.magic-icon {
+  color: #6c5ce7;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.add-to-chat-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.add-to-chat-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.add-to-chat-hint {
+  font-size: 11px;
+  color: #666;
+  font-style: italic;
+}
+
+.keyboard-shortcut {
+  font-size: 11px;
+  color: #999;
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.selection-menu-divider {
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 0;
+}
+
+.selection-menu-section {
+  padding: 8px 0;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  margin-bottom: 4px;
+}
+
+.section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.section-badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.section-badge.labs {
+  background-color: #fee;
+  color: #c33;
+}
+
+.section-badge.new {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.menu-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+  font-size: 13px;
+  color: #333;
+}
+
+.menu-option:hover {
+  background-color: #f5f5f5;
+}
+
+.option-icon {
+  color: #6c5ce7;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.menu-option span {
+  flex: 1;
+}
+
+.chevron-icon {
+  color: #999;
+  font-size: 10px;
+  flex-shrink: 0;
+}
+
+.submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  min-width: 140px;
+  padding: 4px 0;
+  margin-left: 4px;
+  z-index: 2001;
+}
+
+.submenu-option {
+  padding: 8px 16px;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.submenu-option:hover {
+  background-color: #f5f5f5;
+}
+
+.selection-menu-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px;
+  border-top: 1px solid #e5e5e5;
+  background-color: #fafafa;
+}
+
+.action-btn {
+  flex: 1;
+  min-width: 100px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s;
+  color: #333;
+}
+
+.action-btn:hover {
+  background-color: #f5f5f5;
+  border-color: #6c5ce7;
+}
+
+.action-btn.replace {
+  background-color: #6c5ce7;
+  color: white;
+  border-color: #6c5ce7;
+}
+
+.action-btn.replace:hover {
+  background-color: #5a4fcf;
+}
+
+.action-btn.insert {
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
+.action-btn.insert:hover {
+  background-color: #218838;
+}
+
+.action-btn.try-again {
+  background-color: #ffc107;
+  color: #333;
+  border-color: #ffc107;
+}
+
+.action-btn.try-again:hover {
+  background-color: #e0a800;
+}
+
+.action-btn.discard {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+.action-btn.discard:hover {
+  background-color: #c82333;
+}
+
